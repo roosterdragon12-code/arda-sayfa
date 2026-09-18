@@ -1,0 +1,85 @@
+
+<body>
+
+<h2>Çizgi &lt;hr&gt; yerine</h2>
+
+<style>
+@font-face {
+    font-family: "Material Symbols Outlined";
+    src: url("https://fonts.gstatic.com/s/materialsymbolsoutlined/v372/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2") format("woff2");
+}
+
+
+body {
+    font-family: "Arial";
+}
+input[type="text"]::placeholder {
+    font-size:10px
+}
+textarea {
+    width: 200px;
+    height: 25px;
+    font-size: 14px;
+    color: black;
+    background: white;
+    border: 1px solid gray;
+   animation: ad 3s infinite;
+}
+button {
+    border-radius: 0px;
+    
+}
+@keyframes ad {
+    0% {
+      ;
+    }
+
+    50% {
+        font-family: monospace;
+    }
+
+
+    100% {
+        font-family: "Arial";
+    }
+}
+  
+</style>
+
+
+<h3>Tipler</h3>
+<details>
+<summary>Tıkla</summary>
+<ul style="font-family: 'times new roman';">
+    <li><h5>------------------------------------------------------------------------</h5></li>
+    <br>
+
+    <li><h5>=============================================</h5></li>
+    <br>
+
+    <li><h5>_____________________________________________</h5></li>
+    <br>
+</ul>
+<textarea  placeholder="Ara"></textarea>
+</details>
+<details>
+
+<summary>Diğer</summary>
+
+
+<ul class="list">
+    <li>
+<button onclick="document.getElementById('keyframe_status').innerHTML = '<font color=&quot;blue&quot;>this_status: <span style=&quot;color:green;&quot;>{ {status} }</span></font>';">
+    Durumu getir
+</button>
+
+            
+    </li>
+
+    <li>
+        <pre id="keyframe_status">null</pre>
+    </li>
+</ul>
+
+</details>
+</body>
